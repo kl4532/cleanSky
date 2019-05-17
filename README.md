@@ -18,13 +18,13 @@ Sometimes API need some more time to respond(5-20s).
 ## How program works
 
 1. After user input and submit, program proceed to validation of it. If it fails,
-proper information is sent for the User. If validation succeed program goes to 2.
+proper information is sent to the User. If validation succeed program goes to 2.
 2. Second stage is calling API using input data provided by the User. For that purpose fetch async method was used.
-  - First, openAQ API is called, which after sorting sends 10 most polluted cities in choosen country and parameter.
-  - Then, with a use of previous data, call for wikiAPI is made. At this time the result data is
+  - First, *openAQ* API is called, which after sorting, sends 10 most polluted cities in choosen country and for choosen      parameter.
+  - Then, with a use of previous data, call for *wikiAPI* is made. At this time the result data is text
   description of each city from previous call.
 During API processing, received results are rendered by using DOM manipulation.
-3. Additionaly recent input data is memorized in input and select tags, by saving it in browser localStorage. So after refreshing page last user choice is visible.
+3. Additionaly recent input data is memorized in input field and select tag, by saving it in browser localStorage. So after refreshing page last user choice is visible.
 
 ## Author
 
